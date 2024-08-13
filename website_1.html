@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calista Besseling</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2222/2222384.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Hobbies</a>
+        <a href="#">Fun Facts</a>
+        <a href="#">Contact</a>
+    </div>
+    <span id="navIcon" class="nav-icon" onclick="openNav()">
+        <img src="https://cdn-icons-png.flaticon.com/128/2222/2222384.png" width="100px">
+    </span>
+
+    <main>
+        <!-- PHOTO WALL-->
+        <div class="photo-wall">
+            <div class="text-section-hi">
+                <h1>Hi,</h1>
+            </div>
+            <div class="text-section-cali">
+                <h2>I'm Calista</h2>
+            </div>
+            <div class="photo-1">
+              <img src="https://mail.google.com/mail/u/0?ui=2&ik=e7ecc16f07&attid=0.1&permmsgid=msg-a:r5528624227073198941&th=19056d6eec0d3f75&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8Em6KB8wPCKzfAwmyu8NzeOprpUvAAYw5osdFALjFdkYRuOPTN7bY70uUNo_QZWuf4B4vxeDqVtcqbqm_I6A6h_7bgr0IgVegjCjWCg-F2gSByAikMQD2bS7Y&disp=emb&realattid=19056d64f093e0b62262">
+            </div>
+
+            <div class="photo-2">
+              <img src="Pictures for website/Goose_and_drawing-removebg-preview.png">
+            </div>
+
+            <div class="photo-3">
+              <img src="Pictures for website/headshot.png">
+            </div>
+
+            <div class="photo-4">
+              <img src="https://mail.google.com/mail/u/0?ui=2&ik=e7ecc16f07&attid=0.3&permmsgid=msg-a:r5528624227073198941&th=19056d6eec0d3f75&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ97eIgvrIrvYOmvnkoXLY_0aYyXNmcCcIqOrUA0Pd79Nb0yEZke6Rw9fbWIRDqs_kSnlotmReqoOSNYIpHUM-J4HcL9vdMWPLURk592VXqbkEs9XRVpKmLypFw&disp=emb&realattid=19056d68fd239ab86c94">
+            </div>
+        </div>
+        <!------------------->   
+
+        <!-- ABOUT-->
+        <img src="Pictures for website/headshot.png" width="0px" id="about">
+        <div class="about">     
+                <p style="font-size: 6vw;">A bit about me...</p>
+                <p style="font-size: 2.5vw;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>          
+        </div>
+        <!------------------->  
+        
+        <!-- WORK EXPERIENCE-->
+        <div class="slideshow">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+            </label>
+          </div>
+
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                  <defs/>
+                  <path d="M5 3l14 9-14 9V3z"/>
+                </svg>
+              </div>
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">Bunker</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Balthazar</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Words Remain</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Moderator</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">Falling Out</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Otzeki</div>
+                    <div class="time">4.05</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!------------------->  
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        let lastScrollTop = 0;
+        const navIcon = document.getElementById("navIcon");
+
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scroll down, hide the icon
+                navIcon.classList.add("hidden");
+            } else {
+                // Scroll up, show the icon
+                navIcon.classList.remove("hidden");
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        }, false);
+
+        $('input').on('change', function() {
+        $('body').toggleClass('blue');
+        });
+    </script>
+</body>
+</html>
