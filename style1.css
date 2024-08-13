@@ -1,16 +1,16 @@
 @font-face {
     font-family: Ailron;
-    src: url(Aileron-Thin.otf);
+    src: url(Fonts/Aileron-Thin.otf);
 }
 
 @font-face {
     font-family: Aileron;
-    src: url(Aileron-UltraLight.otf);
+    src: url(Fonts/Aileron-UltraLight.otf);
 }
 
 @font-face {
     font-family: Ailon;
-    src: url(Aileron-Light.otf);
+    src: url(Fonts/Aileron-Light.otf);
 }
 
 h1 {
