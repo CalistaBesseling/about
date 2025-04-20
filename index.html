@@ -8,20 +8,15 @@
     <link rel="stylesheet" href="./style1.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2222/2222384.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
 </head>
 <body>
     
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#about">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Hobbies</a>
-        <a href="#">Fun Facts</a>
-        <a href="#">Contact</a>
     </div>
     <span id="navIcon" class="nav-icon" onclick="openNav()">
-        <img src="https://cdn-icons-png.flaticon.com/128/2222/2222384.png" width="100px">
+        <img src="sun icon.png" width="100px">
     </span>
 
     <main>
@@ -34,7 +29,10 @@
                 <h2>I'm Calista</h2>
             </div>
             <div class="photo-1">
-              <img src="https://mail.google.com/mail/u/0?ui=2&ik=e7ecc16f07&attid=0.1&permmsgid=msg-a:r5528624227073198941&th=19056d6eec0d3f75&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8Em6KB8wPCKzfAwmyu8NzeOprpUvAAYw5osdFALjFdkYRuOPTN7bY70uUNo_QZWuf4B4vxeDqVtcqbqm_I6A6h_7bgr0IgVegjCjWCg-F2gSByAikMQD2bS7Y&disp=emb&realattid=19056d64f093e0b62262">
+              <div class="animate__animated animate__hinge animate__delay-2s">
+                <img src="Pictures for website/flower.jpg">
+              </div>
+              <div class="behindText">welcome to my website</div>
             </div>
 
             <div class="photo-2">
@@ -46,77 +44,185 @@
             </div>
 
             <div class="photo-4">
-              <img src="https://mail.google.com/mail/u/0?ui=2&ik=e7ecc16f07&attid=0.3&permmsgid=msg-a:r5528624227073198941&th=19056d6eec0d3f75&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ97eIgvrIrvYOmvnkoXLY_0aYyXNmcCcIqOrUA0Pd79Nb0yEZke6Rw9fbWIRDqs_kSnlotmReqoOSNYIpHUM-J4HcL9vdMWPLURk592VXqbkEs9XRVpKmLypFw&disp=emb&realattid=19056d68fd239ab86c94">
+              <img src="Pictures for website/acorn.jpg">
+            </div>
+
+            <div class="photo-5">
+              <img src="Pictures for website/flower.jpg">
             </div>
         </div>
         <!------------------->   
 
         <!-- ABOUT-->
-        <img src="Pictures for website/headshot.png" width="0px" id="about">
-        <div class="about">     
-                <p style="font-size: 6vw;">A bit about me...</p>
-                <p style="font-size: 2.5vw;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>          
+        <div class="about"> 
+          <img src="Pictures for website/headshot.png" width="0px" id="about">    
+          <div class="hidden">
+            <p style="font-size: 6vw;">A bit about me...</p>
+
+            <p style="font-size: 2.5vw;">I enjoy creating things. Anything really, websites, music, art. This love for creating, naturally led me to want to pursue a career in computer science, 
+              because it feels like I can create anything I can imagine.
+              I love having the opportunity to try new things and constantly learn.</p>
+            <div class="container"><button id="myButton" onclick="getFact()"><p style="font-size: 2vw;">Click here for a "fun" Calista fact!</p></button>
+              <p id="hiddenText" style="font-size: 1.75vw;"></p>
+            </div>
+          </div>         
         </div>
         <!------------------->  
-        
+
         <!-- WORK EXPERIENCE-->
-        <div class="slideshow">
+        <!--<img src="sun icon.png" width="0px" id="experience">
+        <p style="font-size: 6vw;">Work Experience</p>
         <div class="container">
-            <input type="radio" name="slider" id="item-1" checked>
-            <input type="radio" name="slider" id="item-2">
-            <input type="radio" name="slider" id="item-3">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+          <input type="radio" name="slider" id="item-4">
+  
+        <div class="cards">
+          <label class="card" for="item-1" id="song-1">
+            <img src="https://investburlington.ca/wp-content/uploads/2020/10/techplace-logo-300x300.jpg" alt="song">
+          </label>
+          <label class="card" for="item-2" id="song-2">
+            <img src="Pictures for website/haltech_logo.png" alt="song">
+          </label>
+          <label class="card" for="item-3" id="song-3">
+            <img src="Pictures for website/Code_ninjas_logo.png" alt="song">
+          </label>
+          <label class="card" for="item-4" id="song-4">
+              <img src="Pictures for website/Play_project_logo.png" alt="song">
+            </label>
+        </div>
+  
+        <div class="player">
+          <div class="upper-part">
+            <div class="info-area" id="test">
+  
+              <label class="job-description" id="song-info-1">
+                <p style="font-size: 3vw;">TechPlace</p>
+                  <p style="font-size: 1.5vw;"> I worked at TechPlace in the summer of 2024 after my first year of university. TechPlace is a mix between an accelerator and a coworking space. During my time working there I had the opportunity to meet many amazing entrepreneurs, and find out what the innovation ecosystem had to offer
+                  <br>Website: <a href="https://techplace.ca">techplace.ca</a>
+                  <br>Favourite Memory: There was once a ferusian hawk that visited the office
+                  <br>
+                  </p>
+              </label>
+  
+              <label class="job-description" id="song-info-2">
+                <p style="font-size: 3vw;">Haltech</p>
+                  <p style="font-size: 1.5vw;">Haltech (now Innovation Factory) is a Regional Innovation Centre similar to Communitech or MaRS.
+                  <br> Website: <a href="https://innovationfactory.ca/">innovationfactory.ca</a>
+                  <br> Favourite Memory: Creating Hoogle, which was "Haltech Google", a way for Haltech employees to store information about grants, advisors, programs, etc.
+                  <br>
+                  <br>
+                  </p>
+              </label>
+  
+              <label class="job-description" id="song-info-3">
+                <p style="font-size: 3vw;">Code Ninjas</p>
+                  <p style="font-size: 1.5vw;">In grade 12 I decided I wanted to combine my love of computer science with my love of teaching so I started working at Code Ninjas. I taught Javascript to children ages 4-14.
+                  <br>Website: <a href="https://www.codeninjas.com/">codeninjas.ca</a>
+                  <br>Favourite Memory: Teaching our drone lesson! Code Ninjas purchased a drone, and once a child got to a certain level (or belt) they would get to program the drone to do barrel rolls and fun things like that
+                  <br>
+                  </p>
+              </label>
+  
+              <label class="job-description" id="song-info-3">
+                <p style="font-size: 3vw;">Play Project</p>
+                  <p style="font-size: 1.5vw;">I started my first job in grade 9, I worked as a parkour coach at Play Project Parkour gym in Burlington. I LOVED this job with all of my heart, the community was great. I taught students of all ages from parent and tot classes to adult classes. Learn more about my "parkour career" here**
+                  <br>Website: <a href="https://playproject.ca/">playproject.ca</a>
+                  <br>Favourite Memory: Open Gym (or getting a raw egg dropped on my head)
+                  <br>
+                  </p>
+              </label>
 
-          <div class="cards">
-            <label class="card" for="item-1" id="song-1">
-              <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
-            </label>
-            <label class="card" for="item-2" id="song-2">
-              <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
-            </label>
-            <label class="card" for="item-3" id="song-3">
-              <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
-            </label>
-          </div>
-
-          <div class="player">
-            <div class="upper-part">
-              <div class="play-icon">
-                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-                  <defs/>
-                  <path d="M5 3l14 9-14 9V3z"/>
-                </svg>
-              </div>
-              <div class="info-area" id="test">
-                <label class="song-info" id="song-info-1">
-                  <div class="title">Bunker</div>
-                  <div class="sub-line">
-                    <div class="subtitle">Balthazar</div>
-                    <div class="time">4.05</div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-2">
-                  <div class="title">Words Remain</div>
-                  <div class="sub-line">
-                    <div class="subtitle">Moderator</div>
-                    <div class="time">4.05</div>
-                  </div>
-                </label>
-                <label class="song-info" id="song-info-3">
-                  <div class="title">Falling Out</div>
-                  <div class="sub-line">
-                    <div class="subtitle">Otzeki</div>
-                    <div class="time">4.05</div>
-                  </div>
-                </label>
-              </div>
             </div>
           </div>
         </div>
-        </div>
+  
+      </div> -->
         <!------------------->  
+
+  
+
+        <!-- PROJECTS-->
+        <!--<div class="project-grid">
+          <div class="project-card">
+              <img src="Pictures for website/image-removebg-preview.png" alt="Project 1">
+              <div class="content">
+                  <h3>Project Title 1</h3>
+                  <p>Description of the project goes here. A brief overview of what this project is about.</p>
+              </div>
+          </div>
+          <div class="project-card">
+              <img src="project2.jpg" alt="Project 2">
+              <div class="content">
+                  <h3>Project Title 2</h3>
+                  <p>Description of the project goes here. A brief overview of what this project is about.</p>
+              </div>
+          </div>
+          <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="content">
+                <h3>Project Title 2</h3>
+                <p>Description of the project goes here. A brief overview of what this project is about.</p>
+            </div>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <div class="content">
+              <h3>Project Title 2</h3>
+              <p>Description of the project goes here. A brief overview of what this project is about.</p>
+          </div>
+      </div> 
+          
+      </div>-->
+        
+        <!-------------------> 
+        
+        <!-- HOBBIES-->
+        <!--<img src="sun icon.png" width="0px" id="hobbies">
+        <p style="font-size: 6vw;">Hobbies</p>
+
+        <div class="tab">
+
+          <button class="tablinks" onclick="openCity(event, 'art')" id="defaultOpen">Art</button>
+          
+          <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
+          
+          <button class="tablinks" onclick="openCity(event, 'parkour')">Parkour</button>
+          
+        </div>
+        <div style="background-color: #8AA399;">
+        <div id="art" class="tabcontent">
+          
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+          
+        </div>
+        </div>
+
+        <div style="background-color: #000000;">
+        <div id="music" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+        </div>
+        
+        <div style="background-color: #f06179;">
+        <div id="parkour" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        </div>-->
+        <!-------------------> 
+
+        <!-- CONTACT-->
+        <!--<h1>you can contact me! </h1>-->
+        <!-------------------> 
+
     </main>
 
     <script>
+        /* nav stuff */
         function openNav() {
             document.getElementById("mySidenav").style.width = "300px";
         }
@@ -142,9 +248,128 @@
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
         }, false);
 
-        $('input').on('change', function() {
-        $('body').toggleClass('blue');
+        /*scroll animation*/
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            console.log(entry)
+            if(entry.isIntersecting){
+              entry.target.classList.add('show');
+            }
+          });
         });
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        /* fun facts */
+        var buttonClicks = 0;
+        alreadyChosen = [];
+
+        function getFact() {
+          const numRandomFacts = 3;
+          const hiddenText = document.getElementById('hiddenText');
+          const facts = [
+          "I can do a backflip",
+          "I can juggle",
+          "My favourite programming language is C++ (racket as a close second)",
+          "I'm a huge Star Trek fan",
+          "I can play the violin (but not very well)",
+          "I have two dogs, Bean and Montgomery",
+          "I enjoy crocheting",
+          "I like to sew my own clothes",
+          "My favourite movie is Everything Everywhere All at Once",
+          "I love the game <a href='https://worldle.teuteuf.fr/'> Worldle</a>, and I play it every day",
+          "I love to do the <a href='https://www.nytimes.com/crosswords/game/mini'> Mini Crossword puzzle </a> (although I often reveal squares because I get stuck)"
+          ];
+          const complaints = [
+            "I'm running out of fun facts...",
+            "Please stop clicking this button, I there's nothing else fun about me",
+            "Ok. I asked you nicely to stop, don't make me take away this button",
+            "haha"
+          ]
+          var randomIndex = Math.floor(Math.random() * facts.length);
+          if (buttonClicks < numRandomFacts){
+            for (let j = 0; j < buttonClicks; ++j){
+              if (randomIndex == alreadyChosen[j]){
+                randomIndex++;
+                if (randomIndex >= facts.length){
+                  randomIndex = 0;
+                }
+                j = 0;
+              }
+            }
+            alreadyChosen.push(randomIndex);
+            hiddenText.innerHTML = facts[randomIndex];
+          }else{
+            hiddenText.innerHTML = complaints[buttonClicks-numRandomFacts];
+            if (buttonClicks == numRandomFacts + complaints.length-1){
+              /*button becomes invisible*/
+              let traps = document.getElementById("myButton");
+              traps.style.visibility = 'hidden';
+            }
+          }
+          ++buttonClicks;
+        }
+
+        /* Hobbies */
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+
+          // Hide all tab content
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          // Remove the active class from all buttons
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+              tablinks[i].style.backgroundColor = "#ffffff"; // Reset background color
+          }
+
+          // Show the selected tab content and add the active class to the button
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+          if (cityName == "Art"){
+            
+          }
+
+          // Get the background color of the active tab content
+          var activeTabContent = document.getElementById(cityName);
+          var backgroundColor = window.getComputedStyle(activeTabContent).backgroundColor;
+
+          // Set the active button's background color to match the tab content
+          evt.currentTarget.style.backgroundColor = backgroundColor;
+        }
+
+        // Make sure to call this after the function is defined
+        document.getElementById("defaultOpen").click();
+
+        function checkOrientation() {
+          const popup = document.getElementById('orientation-popup');
+          const isMobile = window.innerWidth <= 768;
+          const isPortrait = window.innerHeight > window.innerWidth;
+
+          if (isMobile && isPortrait) {
+            popup.classList.add('show');
+          } else {
+            popup.classList.remove('show');
+          }
+        }
+
+        function closePopup() {
+          document.getElementById('orientation-popup').classList.remove('show');
+        }
+
+        window.addEventListener('load', checkOrientation);
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('orientationchange', checkOrientation);
     </script>
+    <div id="orientation-popup">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">✕</button>
+        <p>Please turn your phone horizontally</p>
+      </div>
+    </div>
 </body>
 </html>
