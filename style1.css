@@ -69,7 +69,6 @@ body, html {
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: -20vh;
   padding-bottom: -20vh;
-  overflow-y: auto;
 }
 
 .text-section-hi {
