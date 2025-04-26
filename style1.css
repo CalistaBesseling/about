@@ -48,6 +48,8 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
 }
 
 
@@ -67,6 +69,7 @@ body, html {
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: -20vh;
   padding-bottom: -20vh;
+  overflow-y: auto;
 }
 
 .text-section-hi {
@@ -161,6 +164,7 @@ width: 11vw;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 4%;
+  overflow-y: auto;
 }
 
 .sidenav a {
@@ -208,6 +212,7 @@ width: 11vw;
   background-color: #f06179;
   padding-bottom: 9vh;
   padding-top: 1vw;
+  overflow-y: auto;
 }
 .about p {
   margin-top: 0.5em;
@@ -240,6 +245,7 @@ cursor: pointer;
 text-align: center;
 white-space: nowrap;
 border-radius: 8px;
+pointer-events: auto; 
 }
 button:hover {
 color: #f06179;
@@ -255,7 +261,7 @@ transition: opacity 0.5s ease, max-height 0.5s ease;
 
 .hiddenFact.showFact {
 opacity: 1;
-max-height: 100px; /* Adjust based on your text height */
+max-height: 100px; 
 }
 /* ***************** */
 
@@ -552,42 +558,44 @@ margin: 0;
 }
 
 #orientation-popup {
-display: none; /* Hidden by default */
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-background: rgba(0, 0, 0, 0.8);
-z-index: 9999;
-justify-content: center;
-align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 
 #orientation-popup.show {
-display: flex;
+  display: flex;
+  pointer-events: all;
 }
 
 .popup-content {
-background: #FFF8F0;
-color: black;
-padding: 23px;
-border-radius: 10px;
-text-align: center;
-position: relative;
-width: 80%;
-max-width: 300px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-font-size: 1.2rem;
+  background: #FFF8F0;
+  color: black;
+  padding: 23px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 1.2rem;
 }
 
 .close-btn {
-position: absolute;
-top: 1vh;
-right: 1vw;
-background: transparent;
-border: none;
-font-size: 15px;
-cursor: pointer;
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
 }
 
