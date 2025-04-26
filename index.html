@@ -19,6 +19,16 @@
         <img src="Pictures for website/sun icon.png" width="100px">
     </span>
 
+    <div id="orientation-popup">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">✕</button>
+        <p>Hi, I'm still working on making this website look good on a mobile device,
+          so for now, please either move to a computer, turn your phone to landscape mode,
+        or don't judge too hard</p>
+        </p>
+      </div>
+    </div>
+
     <main>
         <!-- PHOTO WALL-->
         <div class="photo-wall">
@@ -270,7 +280,7 @@
           const facts = [
           "I can do a backflip",
           "I can juggle",
-          "My favourite programming language is C++ (racket as a close second)",
+          "My favourite programming language is C++ (racket as a close second 😉)",
           "I'm a huge Star Trek fan",
           "I can play the violin (but not very well)",
           "I have two dogs, Bean and Montgomery",
@@ -342,13 +352,10 @@
           evt.currentTarget.style.backgroundColor = backgroundColor;
         }
 
-        // Make sure to call this after the function is defined
-        document.getElementById("defaultOpen").click();
-
         function checkOrientation() {
           const popup = document.getElementById('orientation-popup');
-          const isMobile = window.innerWidth <= 768;
-          const isPortrait = window.innerHeight > window.innerWidth;
+          const isMobile = window.innerWidth <= 800;
+          const isPortrait = window.matchMedia("(orientation: portrait)").matches;
 
           if (isMobile && isPortrait) {
             popup.classList.add('show');
@@ -365,11 +372,5 @@
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('orientationchange', checkOrientation);
     </script>
-    <div id="orientation-popup">
-      <div class="popup-content">
-        <button class="close-btn" onclick="closePopup()">✕</button>
-        <p>Please turn your phone horizontally</p>
-      </div>
-    </div>
 </body>
 </html>
