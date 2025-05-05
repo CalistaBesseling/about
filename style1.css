@@ -452,16 +452,17 @@ object-fit: cover;
 }
 
 .projects-heading {
+  display: flex;
+  align-items: center;
   font-family: "Ailron";
   font-size: 6vw;
-  padding: 12vh 4vw;
   background-color: #8AA399;
   border-radius: 100px;
   white-space: nowrap;
   position: absolute;
   width: 40vw;
   height: 40vh;
-  transform: translate(168%, 20%);
+  transform: translate(175%, 20%);
   color: #FFF8F0;
 }
 
