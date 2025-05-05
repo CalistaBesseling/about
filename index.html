@@ -67,7 +67,7 @@
         <!-- ABOUT-->
         <div class="about"> 
           <img src="Pictures for website/headshot.png" width="0px" id="about">    
-          <div class="hidden">
+          <div class="about-text">
             <p style="font-size: 6vw;">A bit about me...</p>
 
             <p style="font-size: 2.5vw;">I enjoy creating things. Anything really, websites, music, art, clothes. This website will
@@ -115,9 +115,7 @@
                   </p>
               </div>
           </div>
-          <div class="hidden">
             <h1 class="projects-heading">Projects</h1>
-          </div>
         </div>
 
         <div class="project-grid">
@@ -243,17 +241,17 @@
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              if (entry.target.classList.contains('hidden')) {
+              if (entry.target.classList.contains('about-text')) {
                 entry.target.classList.add('show-about');
-              } else if (entry.target.classList.contains('projects-heading')) {
+              } else if (entry.target.classList.contains('project-grid')) {
                 entry.target.classList.add('show-projects');
               }
             }
           });
         });
 
-        const aboutSection = document.querySelectorAll('.hidden');
-        const projectSections = document.querySelectorAll('.projects-heading');
+        const aboutSection = document.querySelectorAll('.about-text');
+        const projectSections = document.querySelectorAll('.project-grid');
 
         aboutSection.forEach((el) => observer.observe(el));
         projectSections.forEach((el) => observer.observe(el));
