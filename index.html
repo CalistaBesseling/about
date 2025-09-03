@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#hobbies">Hobbies</a>
 
         <div class="social-icons">
           <a href="https://github.com/CalistaBesseling" target="_blank" style="margin-left: 20px;">
@@ -80,7 +80,7 @@
 
             <p style="font-size: 2.5vw;">I enjoy creating things. Anything really, websites, music, art, clothes. This website will
               be my spot to share these creations, and will constantly be under construction as I learn, and create new things.</p>
-            <div class="container"><button id="myButton" onclick="getFact()"><p style="font-size: 2vw;">Click here for a "fun" Calista fact!</p></button>
+            <div class="container"><button  class="funfact" id="myButton" onclick="getFact()"><p style="font-size: 2vw;">Click here for a "fun" Calista fact!</p></button>
               <p id="hiddenText" style="font-size: 1.75vw; margin-right: 2%;"></p>
             </div>
           </div>         
@@ -179,40 +179,93 @@
         <!-------------------> 
         
         <!-- HOBBIES-->
-        <!--<img src="sun icon.png" width="0px" id="hobbies">
-        <p style="font-size: 6vw;">Hobbies</p>
+        <img src="Pictures for website/flower.jpg" id="hobbies" style="width: 0; height: 0;">
+        <div class="hobbies">
+          <div class="hobbieTitle">
+            <h3>Hobbies</h3>
+          </div>
 
-        <div class="tab">
+          <div class="tabChoices">
 
-          <button class="tablinks" onclick="openCity(event, 'art')" id="defaultOpen">Art</button>
+            <button class="tablinks" onclick="openCity(event, 'art')" id="defaultOpen">Art</button>
+            
+            <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
+            
+            <button class="tablinks" onclick="openCity(event, 'parkour')">Sports</button>
+            
+          </div>
           
-          <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
-          
-          <button class="tablinks" onclick="openCity(event, 'parkour')">Parkour</button>
-          
-        </div>
-        <div style="background-color: #8AA399;">
-        <div id="art" class="tabcontent">
-          
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
-          
-        </div>
-        </div>
+          <div id="art" class="tabcontent" style="background-color: #8AA399;">
+            <div class="hobbiePhotos">
+              <div class="drawing-1">
+                <img onclick="changeDrawingSize('fishDrawing')" src="Pictures for website/fishDrawing.jpg" id="drawing1">
+              </div>
+              <div class="drawing-2">
+                <img onclick="changeDrawingSize('dominosDrawing')" src="Pictures for website/dominosDrawing.jpg" alt="">
+              </div>
+              <div class="drawing-3">
+                <img onclick="changeDrawingSize('doodles')" src="Pictures for website/doodles.jpg" alt="">
+              </div>
+              <div class="drawing-4">
+                <img onclick="changeDrawingSize('villageDrawing')" src="Pictures for website/villageDrawing.jpg" alt="">
+              </div>
+              <div class="drawing-5">
+                <img onclick="changeDrawingSize('twoLinesDrawing')" src="Pictures for website/twoLinesDrawing.jpg" alt="">
+              </div>
+            </div>
 
-        <div style="background-color: #000000;">
-        <div id="music" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p> 
-        </div>
-        </div>
-        
-        <div style="background-color: #f06179;">
-        <div id="parkour" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
-        </div>
-        </div>-->
+            <div class="hobbieDescription">
+              <h3 style="font-size: 5vw;"> 🎨 Art</h3>
+              <p style="font-size: 2vw;"> I like to draw, often with a pen and paper. I'm usually doodling in class.</p>
+              <p style="font-size: 2vw; padding-top: 3vh;"> Click on any of the images for a closer look!</p>  
+            </div>
+          </div>
+
+          <div id="music" class="tabcontent" style="background-color: #000000;">
+            <div class="square-grid">
+              <img src="https://www.xsnoize.com/wp-content/uploads/2020/10/AdrianneLenker_Songs.jpg" alt="">
+              <img src="https://i.scdn.co/image/ab67616d0000b273d58e537cea05c2156792c53d" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/LouderThanBombs.jpg" alt="">
+              <img src="https://i.scdn.co/image/ab67616d0000b273d461c3524b718efb2d04821e" alt="">
+              <img src="https://www.sonicboommusic.com/cdn/shop/products/Cocteau-Twins-Heaven-Or-Las-Vegas-New-Vinyl_1024x.jpg?v=1745526482" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Might_Delete_Later.png" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/d/df/RedHotChiliPeppersCalifornication.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Indigo_de_Souza_I_Love_My_Mom.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Titanic_Rising.jpg" alt="">
+              <img src="https://i.scdn.co/image/ab67616d0000b2739529217e48fc8bab89c8a1f9" alt="">
+              <img src="https://f4.bcbits.com/img/a0882840373_16.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/The_Last_Dinner_Party_-_Prelude_to_Ecstasy.png" alt="">
+              <img src="https://m.media-amazon.com/images/I/71R+ajRm3rL._UF1000,1000_QL80_.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Boygenius_-_the_record.jpg" alt="">
+              <img src="https://f4.bcbits.com/img/a1334946428_16.jpg" alt="">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Haley_Heynderickx_%E2%80%93_Seed_of_a_Seed.jpg/250px-Haley_Heynderickx_%E2%80%93_Seed_of_a_Seed.jpg" alt="">
+            </div>              
+
+            <div class="hobbieDescription">
+              <h3 style="font-size: 5vw; color: white;">🎻 Music</h3>
+              <p style="font-size: 2vw;"> You'll often find me with my headphones on. I love listening to music (of all kinds). As for making music, I enjoy playing the violin.</p>
+              <p style="font-size: 2vw; padding-top: 3vh;"> Here are some of my favourite albums of all time</p>
+            </div>
+          </div>
+          
+          <div id="parkour" class="tabcontent" style="background-color: #f06179;">
+            <div class="hobbiePhotos" style="display: flex; padding-left: 10vw;">
+              <video 
+                class="parkourVideo"
+                controls
+                preload="none"
+                poster="Pictures for website/coverParkourImage.png">
+                <source src="Pictures for website/parkour.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="hobbieDescription">
+              <h3 style="font-size: 5vw;">🏋️‍♂️ Sports</h3>
+              <p style="font-size: 2vw;"> Growing up I played basketball, but in highschool when I got my first job as a parkour coach I started to learn more about parkour. Now I love to flip. </p>
+              <p style="font-size: 2vw; padding-top: 3vh;"> When I'm at school, and away from the parkour gym, I try to stay active with ultimate frisbee and olympic weightlifting</p>  
+            </div>
+          </div>
+          </div>
         <!-------------------> 
 
         <!-- CONTACT-->
@@ -331,22 +384,33 @@
           tablinks = document.getElementsByClassName("tablinks");
           for (i = 0; i < tablinks.length; i++) {
               tablinks[i].className = tablinks[i].className.replace(" active", "");
-              tablinks[i].style.backgroundColor = "#ffffff"; // Reset background color
           }
 
           // Show the selected tab content and add the active class to the button
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(cityName).style.display = "grid"; // Ensure grid display
           evt.currentTarget.className += " active";
-          if (cityName == "Art"){
-            
-          }
 
           // Get the background color of the active tab content
           var activeTabContent = document.getElementById(cityName);
           var backgroundColor = window.getComputedStyle(activeTabContent).backgroundColor;
 
-          // Set the active button's background color to match the tab content
-          evt.currentTarget.style.backgroundColor = backgroundColor;
+          // Set the hobbies section's background color to match the active tab content
+          document.querySelector('.hobbies').style.backgroundColor = backgroundColor;
+        }
+
+        function changeDrawingSize(imgName) {
+          const blackScreen = document.createElement("div");
+          blackScreen.classList.add("blackScreen");
+          document.body.appendChild(blackScreen);
+
+          const drawing = document.createElement("img");
+          drawing.classList.add("mainDrawing");
+          blackScreen.appendChild(drawing).src = "Pictures for website/" + imgName + ".jpg";
+
+          blackScreen.onclick = () => {
+            document.body.removeChild(blackScreen);
+            document.body.removeChild(drawing);
+          };
         }
 
         function checkOrientation() {
@@ -365,7 +429,10 @@
           document.getElementById('orientation-popup').classList.remove('show');
         }
 
-        window.addEventListener('load', checkOrientation);
+        window.addEventListener('load', () => {
+          checkOrientation();
+          document.getElementById("defaultOpen").click(); 
+        });
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('orientationchange', checkOrientation);
     </script>
