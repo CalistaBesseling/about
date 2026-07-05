@@ -24,10 +24,13 @@
           </a>
         </div>
     </div>
+    <div id="loader-overlay">
+      <div class="spinner"></div>
+    </div>
     <span id="navIcon" class="nav-icon" onclick="openNav()">
         <img src="Pictures for website/sun icon.png" width="100px">
     </span>
-
+    <div id="main-content">
     <div id="orientation-popup">
       <div class="popup-content">
         <button class="close-btn" onclick="closePopup()">✕</button>
@@ -144,11 +147,11 @@
             </div>
           </div>
           <div class="project-card">
-            <img src="Pictures for website/caretimage.png" alt="Project 4">
+            <img src="Pictures for website/fannotation.png" alt="Project 4">
             <div class="content">
-                <h3>Caret 
+                <h3>Fannotation 
                   <div class="project-links">
-                    <a href="https://github.com/CalistaBesseling/caret" target="_blank">
+                    <a href="https://github.com/CalistaBesseling/Fannotation" target="_blank">
                       <img src="Pictures for website/github.png" alt="GitHub">
                     </a>
                     <a href="https://youtube.com/shorts/8m99M6qdIcM?si=QpZNVUJGS9tyo2qc" target="_blank">
@@ -156,7 +159,7 @@
                     </a>
                   </div>
                 </h3>
-                <p>Chrome extension built for Microsoft Imagine Cup. Provides a kind message at the click of a button.</p>
+                <p>As someone who really enjoys making playlists for other people, I wanted to not only be able to send the playlist, but also my thoughts about each song. That person can also add their own comments so I can see which songs they liked and which they didn't.</p>
             </div>
           </div>
           <div class="project-card">
@@ -271,10 +274,44 @@
         <!-- CONTACT-->
         <!--<h1>you can contact me! </h1>-->
         <!-------------------> 
-
+    </div>
     </main>
 
     <script>
+        /* loader stuff */
+        const imageUrls = [
+          'Pictures for website/flower.jpg',
+          'Pictures for website/acorn.jpg',
+          'Pictures for website/Goose_and_drawing-removebg-preview.png',
+          'Pictures for website/headshot.png'
+        ];
+
+        function preloadImage(src) {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = resolve;
+            img.onerror = resolve; 
+            img.src = src;
+          });
+        }
+
+        const imagePromises = imageUrls.map(preloadImage);
+        const fontsPromise = document.fonts ? document.fonts.ready : Promise.resolve();
+
+        Promise.all([...imagePromises, fontsPromise]).then(() => {
+          const overlay = document.getElementById('loader-overlay');
+          const content = document.getElementById('main-content');
+
+          content.classList.add('ready');
+          overlay.classList.add('hidden');
+
+          document.querySelectorAll('.photo-2, .photo-3, .photo-4, .photo-5').forEach(el => {
+            el.classList.add('animationTime');
+          });
+
+          setTimeout(() => overlay.remove(), 400);
+        });
+
         /* nav stuff */
         function openNav() {
             document.getElementById("mySidenav").style.width = "300px";
